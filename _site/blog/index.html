@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
+  
   <title>Test Page: Don't Panic</title>
+  
+  
+  <meta name="description" content="This is a DevOps site">
+  
+  <link href='/favicon.png' rel="icon">
   <meta charset="utf-8">
+  <meta name="viewpoint" content="width=device-width. initial-scale=1">
+  <link rel="stylesheet" href="/fonts/css/all.css">
   <link rel="stylesheet" href="/css/main.css">
 </head>
+
   <body>
     <header class="header">
   <nav>
+    <input type="checkbox" id="mobile-menu" class="mobile-menu-check">
+    <label for="mobile-menu" class="show-mobile-menu">Menu</label>
     <ul class="header-nav">
       <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
-<li><a href="/blog">Blog</a></li>
+<li class="dropdown">
+  <a class="drop-trigger" href="/blog">Blog</a>
+  <ul class="drop-menu">
+    <li>Recent Posts</li>
+    
+    <li><a href="/2018/10/17/test.html">Third Post</a></li>
+    
+    <li><a href="/2018/10/16/second-posts.html">Second post</a></li>
+    
+    <li><a href="/2018/10/15/title-of-post.html">This is the title of the post</a></li>
+    
+  </ul>
+</li>
+<!--<li><a href="/blog">Blog</a></li>-->
 <li><a href="">Newest Post</a></li>
 
     </ul>
@@ -31,6 +55,16 @@
       <ul class="blog-title-list">
         
         <li>
+          <a href="/2018/10/17/test.html">Third Post</a>
+          <span>Posted: October 17, 2018</span>
+        </li>
+        
+        <li>
+          <a href="/2018/10/16/second-posts.html">Second post</a>
+          <span>Posted: October 16, 2018</span>
+        </li>
+        
+        <li>
           <a href="/2018/10/15/title-of-post.html">This is the title of the post</a>
           <span>Posted: October 15, 2018</span>
         </li>
@@ -41,10 +75,56 @@
     
       <div class="blog-posts">
         <header class="post-header">
+          <h2><a href="/2018/10/17/test.html">I am the title of an article</a></h2>
+          <div class="post-byline">
+            <img src="https://gravatar.com/avatar/ffda7d145b83c4b118f982401f962ca6?s=150" />
+            <a href="http://twitter.com/mhartl" class="social-link">
+              <i class="fab fa-twitter"></i>
+            </a>
+            by: Me, Myself, and I
+            <span> - October 17, 2018</span>
+          </div>
+        </header>
+      <div class="posts-image" style="background-image:url('/images/shark.jpg')"> </div>
+        <p>Call me <em>Ishmael</em>. Some years ago–<em>never mind how long
+precisely</em>–having little or no money in my purse, and nothing
+particular to interest me on shore, I thought I would sail about a little
+and see the watery part of the world. It is a way I have of driving off
+the spleen and regulating the circulation.</p>
+
+
+      </div>
+    
+      <div class="blog-posts">
+        <header class="post-header">
+          <h2><a href="/2018/10/16/second-posts.html">I am the title of an article</a></h2>
+          <div class="post-byline">
+            <img src="https://gravatar.com/avatar/ffda7d145b83c4b118f982401f962ca6?s=150" />
+            <a href="http://twitter.com/mhartl" class="social-link">
+              <i class="fab fa-twitter"></i>
+            </a>
+            by: Me, Myself, and I
+            <span> - October 16, 2018</span>
+          </div>
+        </header>
+      <div class="posts-image" style="background-image:url('/images/shark.jpg')"> </div>
+        <p>Call me <em>Ishmael</em>. Some years ago–<em>never mind how long
+precisely</em>–having little or no money in my purse, and nothing
+particular to interest me on shore, I thought I would sail about a little
+and see the watery part of the world. It is a way I have of driving off
+the spleen and regulating the circulation.</p>
+
+
+      </div>
+    
+      <div class="blog-posts">
+        <header class="post-header">
           <h2><a href="/2018/10/15/title-of-post.html">I am the title of an article</a></h2>
           <div class="post-byline">
             <img src="https://gravatar.com/avatar/ffda7d145b83c4b118f982401f962ca6?s=150" />
-            <a href="http://twitter.com/mhartl" class="social-link">Tw</a>
+            <a href="http://twitter.com/mhartl" class="social-link">
+              <i class="fab fa-twitter"></i>
+            </a>
             by: Me, Myself, and I
             <span> - October 15, 2018</span>
           </div>
@@ -73,7 +153,20 @@ the spleen and regulating the circulation.</p>
     <ul class="footer-nav nav-links">
       <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
-<li><a href="/blog">Blog</a></li>
+<li class="dropdown">
+  <a class="drop-trigger" href="/blog">Blog</a>
+  <ul class="drop-menu">
+    <li>Recent Posts</li>
+    
+    <li><a href="/2018/10/17/test.html">Third Post</a></li>
+    
+    <li><a href="/2018/10/16/second-posts.html">Second post</a></li>
+    
+    <li><a href="/2018/10/15/title-of-post.html">This is the title of the post</a></li>
+    
+  </ul>
+</li>
+<!--<li><a href="/blog">Blog</a></li>-->
 <li><a href="">Newest Post</a></li>
 
     </ul>

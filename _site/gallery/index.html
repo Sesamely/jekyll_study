@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
+  
   <title>Test Page: Don't Panic</title>
+  
+  
+  <meta name="description" content="This is a DevOps site">
+  
+  <link href='/favicon.png' rel="icon">
   <meta charset="utf-8">
+  <meta name="viewpoint" content="width=device-width. initial-scale=1">
+  <link rel="stylesheet" href="/fonts/css/all.css">
   <link rel="stylesheet" href="/css/main.css">
 </head>
+
   <body>
     <header class="header">
   <nav>
+    <input type="checkbox" id="mobile-menu" class="mobile-menu-check">
+    <label for="mobile-menu" class="show-mobile-menu">Menu</label>
     <ul class="header-nav">
       <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
-<li><a href="/blog">Blog</a></li>
+<li class="dropdown">
+  <a class="drop-trigger" href="/blog">Blog</a>
+  <ul class="drop-menu">
+    <li>Recent Posts</li>
+    
+    <li><a href="/2018/10/17/test.html">Third Post</a></li>
+    
+    <li><a href="/2018/10/16/second-posts.html">Second post</a></li>
+    
+    <li><a href="/2018/10/15/title-of-post.html">This is the title of the post</a></li>
+    
+  </ul>
+</li>
+<!--<li><a href="/blog">Blog</a></li>-->
 <li><a href="">Newest Post</a></li>
 
     </ul>
@@ -83,7 +107,20 @@
     <ul class="footer-nav nav-links">
       <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
-<li><a href="/blog">Blog</a></li>
+<li class="dropdown">
+  <a class="drop-trigger" href="/blog">Blog</a>
+  <ul class="drop-menu">
+    <li>Recent Posts</li>
+    
+    <li><a href="/2018/10/17/test.html">Third Post</a></li>
+    
+    <li><a href="/2018/10/16/second-posts.html">Second post</a></li>
+    
+    <li><a href="/2018/10/15/title-of-post.html">This is the title of the post</a></li>
+    
+  </ul>
+</li>
+<!--<li><a href="/blog">Blog</a></li>-->
 <li><a href="">Newest Post</a></li>
 
     </ul>
